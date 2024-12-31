@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Galaxy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="galaxy">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <header>
+            <h1>To-Do Galaxy</h1>
+        </header>
+        <main>
+            <section class="task-lists">
+                <div class="task-list" id="todo">
+                    <h2>To-Do</h2>
+                    <div class="task-container" data-status="todo">
+                        <!-- Task planets will be dynamically added here -->
+                    </div>
+                </div>
+                <div class="task-list" id="inProgress">
+                    <h2>In Progress</h2>
+                    <div class="task-container" data-status="inProgress">
+                        <!-- Task planets will be dynamically added here -->
+                    </div>
+                </div>
+                <div class="task-list" id="done">
+                    <h2>Done</h2>
+                    <div class="task-container" data-status="done">
+                        <!-- Task planets will be dynamically added here -->
+                    </div>
+                </div>
+            </section>
+            <section class="task-form">
+                <h2>Add New Task</h2>
+                <form id="addTaskForm">
+                    <input type="text" id="taskTitle" placeholder="Task Title" required>
+                    <textarea id="taskDescription" placeholder="Task Description" required></textarea>
+                    <input type="date" id="taskDueDate" required>
+                    <select id="taskPriority" required>
+                        <option value="low">Low Priority</option>
+                        <option value="medium">Medium Priority</option>
+                        <option value="high">High Priority</option>
+                    </select>
+                    <button type="submit">Add Task</button>
+                </form>
+            </section>
+        </main>
+        <div id="editTaskModal" class="modal">
+            <div class="modal-content">
+                <h2>Edit Task</h2>
+                <form id="editTaskForm">
+                    <input type="text" id="editTaskTitle" placeholder="Task Title" required>
+                    <textarea id="editTaskDescription" placeholder="Task Description" required></textarea>
+                    <input type="date" id="editTaskDueDate" required>
+                    <select id="editTaskPriority" required>
+                        <option value="low">Low Priority</option>
+                        <option value="medium">Medium Priority</option>
+                        <option value="high">High Priority</option>
+                    </select>
+                    <button type="submit">Update Task</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,17 @@
+.taskList {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  min-width: 250px;
+  margin: 0 10px;
+}
+
+.taskList h2 {
+  color: white;
+  text-align: center;
+}
+
+.taskContainer {
+  min-height: 300px;
+}
+
